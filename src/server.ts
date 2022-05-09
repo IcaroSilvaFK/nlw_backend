@@ -7,5 +7,7 @@ const port = 8080;
 app.use(router);
 
 app.listen(process.env.PORT || port, () => {
-  console.log(`Server listen in uri = http://localhost:${port}`);
+  console.log(
+    `Server listen in uri = http://localhost:${process.env.PORT || port}`
+  );
 });
