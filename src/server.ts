@@ -6,6 +6,6 @@ const port = 8080;
 
 app.use(router);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Server listen in uri = http://localhost:${port}`);
 });
